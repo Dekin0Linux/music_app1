@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <script src="https://kit.fontawesome.com/2116baf6f6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="notch"></div>
+        <div class="bar">
+            <p>9:41</p>
+            <div>
+                <i class="fa-solid fa-signal"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-battery-full"></i>
+            </div>
+        </div>
+
+        <div class="top">
+            <div><i class="fa-solid fa-chevron-left"></i></div>
+            <div>
+                <small>Playing from album</small>
+                <p>Narrate for you</p>
+            </div>
+            <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+        </div>
+
+        <div id="player">
+            <img src="./img.jpg" alt="" width="100%" >
+        </div>
+
+        <audio id="song">
+            <source src="./song.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="label">
+            <div>
+                <p>Annabell's Homework</p>
+                <small>Alec Benjamin</small>
+            </div>
+            <div>
+                <i class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+        <input type="range" id="progress">
+        <div class="time">
+            <p id="start">0:00</p>
+            <p id="end">0:00</p>
+        </div>
+        <div class="btns">
+            <div class="circle" onclick="repeat()">
+                <i class="fa-solid fa-repeat" id="rptIcon"></i>
+            </div>
+            <div class="circle">
+                <i class="fa-solid fa-backward-step"></i>
+            </div>
+            <div class="circle" onclick="pausePlay()"><i class="fa-solid fa-play" id="icon"></i></div>
+            <div class="circle">
+                <i class="fa-solid fa-forward-step"></i>
+            </div>
+            <div class="circle">
+                <i class="fa-solid fa-list"></i>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
